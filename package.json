@@ -1,0 +1,30 @@
+{
+  "name": "tarot-side-project",
+  "version": "1.0.0",
+  "description": "about the thoth-tarot deck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-css": "dart-sass --watch scss/style.scss css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Toron-Isil/tarot-side-project.git"
+  },
+  "keywords": [
+    "npm",
+    "scss",
+    "tarot",
+    "thoth",
+    "form"
+  ],
+  "author": "toron-isil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Toron-Isil/tarot-side-project/issues"
+  },
+  "homepage": "https://github.com/Toron-Isil/tarot-side-project#readme",
+  "devDependencies": {
+    "dart-sass": "^1.24.4"
+  }
+}
