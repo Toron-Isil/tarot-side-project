@@ -1,0 +1,145 @@
+@use 'modules/color' as *;
+@use 'modules/fonts' as *;
+
+
+//urls
+$url_0: url(../bg/purple-abstract-bg.jpg);
+$url_1: url(/images/05_thoth-hierophant.jpg);
+
+body {
+	font-family: $font_0, $font_1, $font_2;
+	font-size: 2rem;
+	background-color: $color_0;
+	color: $color_1;
+	background-image: $url_0;
+	background-position: center;
+	margin: 0;
+}
+h1 {
+	font-family: $font_0, $font_2;
+	font-size: 4rem;
+	text-align: center;
+}
+h2 {
+	font-size: 3rem;
+}
+.scroll-arrow-l {
+	font-family: $font_1, $font_3;
+	font-size: 1.8rem;
+	color: $color_2;
+	padding-left: 0;
+	padding-right: 1rem;
+}
+.scroll-arrow-r {
+	font-family: $font_1, $font_3;
+	font-size: 1.8rem;
+	color: $color_2;
+	padding-left: 2rem;
+	padding-right: 0;
+}
+a {
+	color: $color_3;
+	//Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+	text-decoration: none;
+	&:hover {
+		color: $color_1;
+    text-decoration: none;
+
+  }
+  
+	&.thumb img {
+    transform: rotate(-7deg) scale(0.8);
+    transition: all 0.2s ease-in-out;
+    
+		&:hover {
+      transform: rotate(0deg) scale(1);
+		}
+	}
+}
+nav {
+	display: block;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		background-color: $color_4;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		padding-inline-start: 20px;
+		li {
+			display: inline-flex;
+			justify-content: flex-end;
+			padding-right: 5vw;
+			font-size: 3.2rem;
+			font-weight: 600;
+		}
+	}
+}
+.container-love {
+	display: flex;
+}
+aside {
+	display: inline-flex;
+	a p {
+		font-size: 1.5rem;
+		color: $color_5;
+		text-align: center;
+		font-weight: 600;
+		margin-top: 2px;
+		padding-top: 2px;
+		&:visited {
+			color: $color_5;
+		}
+		&:active {
+			color: $color_6;
+		}
+	}
+}
+.card-overview {
+	background-color: $color_4;
+	display: block;
+	margin: 5px;
+	padding: 5px 30px;
+	height: 80vh;
+	overflow: auto;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 3px;
+	div {
+		display: block;
+		padding: 5px;
+		margin: 5px auto;
+	}
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 80px;
+		height: 120px;
+		//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+		border-radius: 5px;
+	}
+}
+.card-details {
+	display: flex;
+	width: 80%;
+	height: 80vh;
+	border: 2px solid $color_7;
+	h2 {
+		text-align: center;
+	}
+}
+.image-container img {
+	border: 2px solid $color_7;
+	display: block;
+	background-color: $color_4;
+	position: relative;
+	height: auto;
+	max-width: 52vh;
+	margin: 1em;
+	background-image: $url_1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 5px;
+}

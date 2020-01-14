@@ -1,176 +1,143 @@
-/* 
-Main stylesheet - starting point
-Author: b.boehm
-*/
 body {
-    /* font-family: 'Qwigley', cursive, sans-serif; */
-    font-family: 'Kaushan Script', Arial, cursive;
-    font-size: 2rem;
-    background-color: blueviolet;
-    color: #fff;
-    background-image: url(../bg/purple-abstract-bg.jpg);
-    background-position: center;
-    margin: 0;
+  font-family: "Kaushan Script", Arial, cursive;
+  font-size: 2rem;
+  background-color: blueviolet;
+  color: #fff;
+  background-image: url(../bg/purple-abstract-bg.jpg);
+  background-position: center;
+  margin: 0;
 }
 
 h1 {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 4rem;   
-    text-align: center;
+  font-family: "Kaushan Script", cursive;
+  font-size: 4rem;
+  text-align: center;
 }
 
 h2 {
-    font-size: 3rem;
-}
-
-.scroll-arrow-l, .scroll-arrow-r {
-    font-family: arial, sans-serif;
-    font-size: 1.8rem;
-    color: darkgrey;
+  font-size: 3rem;
 }
 
 .scroll-arrow-l {
-    padding-left: 0;
-    padding-right: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 1.8rem;
+  color: darkgrey;
+  padding-left: 0;
+  padding-right: 1rem;
 }
 
 .scroll-arrow-r {
-    padding-left: 2rem;
-    padding-right: 0;
+  font-family: Arial, sans-serif;
+  font-size: 1.8rem;
+  color: darkgrey;
+  padding-left: 2rem;
+  padding-right: 0;
 }
 
 a {
-    color: rgb(130,0,130);
-    text-shadow: 2px rgba(f, f, f, 0.7);
-    text-decoration: none;
+  color: #820082;
+  text-shadow: 2px 2px rgba(255, 255, 255, 0.7);
+  text-decoration: none;
 }
-
 a:hover {
-    color: #fff;;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
+}
+a.thumb img {
+  transform: rotate(-7deg) scale(0.8);
+  transition: all 0.2s ease-in-out;
+}
+a.thumb img:hover {
+  transform: rotate(0deg) scale(1);
 }
 
 nav {
-    display: block;
-    
+  display: block;
 }
-
 nav ul {
-    display: flex;
-    justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-inline-start: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-inline-start: 20px;
 }
-
 nav ul li {
-    display: inline-flex;
-    justify-content: flex-end;
-    padding-right: 5vw;
-    
-    font-size: 3.2rem;
-    font-weight: 600;
-
+  display: inline-flex;
+  justify-content: flex-end;
+  padding-right: 5vw;
+  font-size: 3.2rem;
+  font-weight: 600;
 }
 
 .container-love {
-    display: flex;
+  display: flex;
 }
 
 aside {
-    display: inline-flex;
+  display: inline-flex;
+}
+aside a p {
+  font-size: 1.5rem;
+  color: #e99000;
+  text-align: center;
+  font-weight: 600;
+  margin-top: 2px;
+  padding-top: 2px;
+}
+aside a p:visited {
+  color: #e99000;
+}
+aside a p:active {
+  color: #ffb846;
 }
 
 .card-overview {
-    background-color: rgba(0, 0, 0, 0.5);
-    display: block;
-    margin: 5px;
-    padding: 5px 30px;
-    /* width: 200px; */
-    height: 80vh;
-    overflow: auto;
-    border-radius: 3px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  margin: 5px;
+  padding: 5px 30px;
+  height: 80vh;
+  overflow: auto;
+  border-radius: 3px;
 }
-
 .card-overview div {
-    display: block;
-    padding: 5px;
-    margin: 5px auto;
+  display: block;
+  padding: 5px;
+  margin: 5px auto;
 }
-
-a.thumb img {
-    rotate: 5deg;
-    transition: all 0.2s ease-in-out;
-}
-
-a.thumb img:hover {
-    rotate: 0deg;
-    scale: 1.2%;
-}
-
 .card-overview img {
-    display: block;
-    margin: 0 auto;
-    width: 80px;
-    height: 120px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 8px 6px -6px black;
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  height: 120px;
+  border-radius: 5px;
 }
-
-aside a p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: rgb(233, 144, 0);
-    text-align: center;
-    font-weight: 600;
-    margin-top: 2px;
-    padding-top: 2px;
-}
-
-aside a p:visited {
-    color: rgb(233, 144, 0);
-}
-
-aside a p:active {
-    color: rgb(255, 184, 70);
-}
-
-/*  card detail container  */
 
 .card-details {
-    display: flex;
-    width: 80%;
-    height: 80vh;
-    border: 2px solid goldenrod;
+  display: flex;
+  width: 80%;
+  height: 80vh;
+  border: 2px solid goldenrod;
+}
+.card-details h2 {
+  text-align: center;
 }
 
 .image-container img {
-    border: 2px solid goldenrod;
-    display: block;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: relative;
-    height: auto;
-    max-width: 52vh;
-    margin: 1em;
-    background-image: url(/images/05_thoth-hierophant.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-attachment: fixed;
-    border-radius: 5px;
-
+  border: 2px solid goldenrod;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: auto;
+  max-width: 52vh;
+  margin: 1em;
+  background-image: url(/images/05_thoth-hierophant.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  border-radius: 5px;
 }
 
-.card-details h2 {
-    text-align: center;
-}
-       
-
-       
-
-/* ----------------------------------------------
-   Navigation
--------------------------------------------------*/
-
-
+/*# sourceMappingURL=style.css.map */
